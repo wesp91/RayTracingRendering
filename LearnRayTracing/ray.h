@@ -1,0 +1,19 @@
+#ifndef RAYH
+#define RAYH
+#include "vec3.h"
+
+#pragma once
+class ray
+{
+public:
+	vec3 A, B;
+
+
+	ray() {}
+	ray(const vec3& a, const vec3& b) { A = a; B = b; }
+	inline vec3 origin() const { return A; }
+	inline vec3 direction() const { return B; }
+	inline vec3 point_at_parameter(float t) const { return A + t * B; }
+};
+
+#endif
