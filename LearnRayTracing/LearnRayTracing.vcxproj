@@ -151,12 +151,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="hitable_list.cpp" />
     <ClCompile Include="main1.cpp" />
-    <ClCompile Include="main2.cpp" />
     <ClCompile Include="main3.cpp" />
+    <ClCompile Include="main4.cpp" />
+    <ClCompile Include="main5_1.cpp" />
+    <ClCompile Include="Main5_2.cpp" />
+    <ClCompile Include="sphere.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="hitable.h" />
+    <ClInclude Include="hitable_list.h" />
     <ClInclude Include="ray.h" />
+    <ClInclude Include="sphere.h" />
     <ClInclude Include="vec3.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

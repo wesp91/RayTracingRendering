@@ -28,7 +28,7 @@ bool hit_sphere(const vec3& center, float radius, const ray& r)
 	return discriminant > 0;
 }
 
-vec3 color(const ray& r)
+vec3 color4(const ray& r)
 {
 	//hit with sphere (red color)
 	if (hit_sphere(vec3(0, 0, -1), 0.5, r))
@@ -64,7 +64,7 @@ int main4()
 			float u = float(i) / float(nx);
 			float v = float(j) / float(ny);
 			ray r(origin, lower_left_corner + u * horizontal + v * vertical);
-			vec3 col = color(r);
+			vec3 col = color4(r);
 			int ir = int(255.99*col[0]);
 			int ig = int(255.99*col[1]);
 			int ib = int(255.99*col[2]);
